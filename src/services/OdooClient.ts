@@ -51,7 +51,7 @@ export class OdooClient {
                 throw new Error(`Odoo error: ${response.data.error.message} - ${response.data.error.data.message}`);
             }
             console.log(`Envio do vídeo realizado com sucesso! Nome do arquivo: ${args.name}, Tipo: ${args.mimetype}`);
-            return response.data.result
+            return response.data
         } catch (error: any) {
             throw error;
         }
